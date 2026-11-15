@@ -1,0 +1,88 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #fff0f5, #ffe3e3);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    background-color: #ffffffcc;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: #ff7a5c;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #e85c42;
+}
+
+.navbar {
+    background-color: #ff7a5c;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 122, 92, 0.25);
+    border-color: #ff7a5c;
+}
+
+.badge-success { background-color: #28a745; }
+.badge-danger { background-color: #dc3545; }
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../assets/images/food-bg.jpg') center center/cover no-repeat;
+    backdrop-filter: blur(4px);
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+
+.nav-pills .nav-link.active {
+    background-color: #ff7a5c;
+    color: white;
+}
+.nav-pills .nav-link {
+    color: #555;
+    border-radius: 0.25rem;
+}
+
+@media (max-width: 576px) {
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1rem; }
+}
